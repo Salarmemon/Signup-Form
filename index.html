@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    
+
+    <main id="main-container">
+        <aside class="image-sidebar">
+            <img src="./Assets/leave.jpg" class="image"/>
+            <div class="logo-container">
+                <img src="./Assets/image.png" class="logo" alt="">
+                <span class="logo-text">ODIN</span>
+            </div>
+        </aside>
+
+        <section id="form-content">
+            <p class="intro-text">This is not a real online service! You know you need 
+                something like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.
+            <br>
+            You know you want to. </p>
+
+            <p class="text">Let's do this!</p>
+
+            <form action="">
+                <div class="flex-container">
+                <div class="flex-item">
+                <label for="first-name">FIRST NAME</label>
+                <br>
+                <input type="text" id="first-name" name="first-name" placeholder="Thor">
+                <br>
+                <label for="password">PASSWORD</label>
+                <br>
+                <input type="password"  id="password" name="password"  minlength="8" maxlength="35"/>
+                </div>
+
+                <div class="flex-item">
+                    <label for="last-name">LAST NAME</label>
+                    <br>
+                    <input type="text" id="last-name" name="last-name">
+                    <br>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <br>
+                    <input type="password" id="confirm-password" name="confirm-password" minlength="8" maxlength="35">
+                </div>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+
 </body>
 </html>
