@@ -19,10 +19,11 @@
 
         <section id="form-content">
             <p class="intro-text">This is not a real online service! You know you need 
-                something like this in your life to help you realize your deepest dreams.
-            Sign up now to get started.
             <br>
-            You know you want to. </p>
+            something like this in your life to help you realize your deepest dreams.
+            <br>
+            Sign up now to get started.</p>
+            <p class="intro-text">You know you want to.</p>
 
             <p class="text">Let's do this!</p>
 
@@ -31,24 +32,33 @@
                 <div class="flex-item">
                 <label for="first-name">FIRST NAME</label>
                 <br>
-                <input type="text" id="first-name" name="first-name" placeholder="Thor">
+                <input type="text" id="first-name" name="first-name" placeholder="Thor" required>
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email" required>
                 <br>
                 <label for="password">PASSWORD</label>
                 <br>
-                <input type="password"  id="password" name="password"  minlength="8" maxlength="35"/>
+                <input type="password"  id="password" name="password"  minlength="8" maxlength="35"/ required>
                 </div>
 
                 <div class="flex-item">
                     <label for="last-name">LAST NAME</label>
                     <br>
-                    <input type="text" id="last-name" name="last-name">
+                    <input type="text" id="last-name" name="last-name" placeholder="Odinson" required>
                     <br>
+                    <label for="phone">PHONE</label>
+                    <input type="number" name="phone" id="phone" required>
                     <label for="confirm-password">CONFIRM PASSWORD</label>
                     <br>
-                    <input type="password" id="confirm-password" name="confirm-password" minlength="8" maxlength="35">
+                    <input type="password" id="confirm-password" name="confirm-password" minlength="8" maxlength="35" required>
                 </div>
                 </div>
+                <button class="create-btn" type="submit">Create Acount</button>
             </form>
+            <label class="login-text">Already have an account <button type="button" class="login-btn">Login</button></label>
+            
         </section>
         
     </main>
